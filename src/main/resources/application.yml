@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  r2dbc:
+    url: r2dbc:mariadb://localhost:3306/flex
+    username: root
+    password: flextravel
+  tenants:
+    acv:
+      url: r2dbc:mariadb://localhost:3306/flex_acv
+      username: root
+      password: flextravel
+    porter:
+      url: r2dbc:mariadb://localhost:3306/flex_porter
+      username: root
+      password: flextravel
